@@ -30,11 +30,11 @@
 					<span class="nav-text fw-bold">
 						Click aqui para sair
 					</span>
-					<a class="btn btn-outline-danger" href="">Sair</a>
+					<a class="btn btn-outline-danger" href="{%url 'logout'%}">Sair</a>
 			
 				{% else %}
-					<a class="btn btn-outline-primary" href="">Entrar</a>
-					<a class="btn btn-success" href="">Registrar</a>
+					<a class="btn btn-outline-primary" href="{%url 'login'%}">Entrar</a>
+					<a class="btn btn-success" href="{%url 'register'%}">Registrar</a>
 				{% endif %} 
 		
 			</div>

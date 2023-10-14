@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container pt-1">
+        
+  <div class="card mx-auto d-flex " style="width: 24rem;">
+
+      <img src="{{cracha.foto.url}}" class="border border-dark card-img-top" alt="foto">
+      
+      <div class="card-body border border-dark">
+        <tr>
+        <p class="card-text fw-bold shadow-lg p-1 ">Nome: {{cracha.nome}} </p>
+        <p class="card-text fw-bold shadow-lg p-1 ">Endereço: {{ cracha.endereco }}</p>
+        <p class="card-text fw-bold shadow-lg p-1 ">Reds: {{cracha.reds}} </p>
+        
+        </tr>
+      </div>
+      <a href="{% url 'home'%}" class="btn btn-dark">Voltar</a>
+  </div>
+    
+</div>
+
+{% endblock content %}
