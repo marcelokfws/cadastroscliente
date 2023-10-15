@@ -15,10 +15,9 @@ def home(request):
 
 def search(request):
     Keyword = request.GET.get('Keyword', '')
-    nome = Cracha.objects.filter(Q(nome__icontains=Keyword))
-
+    form = Cracha.objects.filter(Q(nome__icontains=Keyword))
     context = {
-        'nome': nome}
+        'form': form}
     return render(request, 'home.html', context)
 
 

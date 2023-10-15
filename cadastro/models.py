@@ -10,7 +10,7 @@ class Cracha(models.Model):
     foto = models.FileField()
 
     class Meta:
-       
+
         verbose_name = ("cadastro")
         verbose_name_plural = ("cadastros")
 

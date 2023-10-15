@@ -12,7 +12,7 @@ urlpatterns = [
     path('register/', include('accounts.urls')),
     path('', views.home, name='home'),
     path('search/', views.search, name='search'),
-    path('', include('cadastro.urls')),
+    path('cadastro/', include('cadastro.urls')),
     path('', include('inicial.urls')),
 
 ]
